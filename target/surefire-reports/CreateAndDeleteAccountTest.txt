@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: CreateAndDeleteAccountTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 27.952 sec <<< FAILURE! - in CreateAndDeleteAccountTest
+testCreateAccount(CreateAndDeleteAccountTest)  Time elapsed: 27.898 sec  <<< ERROR!
+org.openqa.selenium.InvalidSelectorException: The given selector th..dataCell   > a is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+Command duration or timeout: 502 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'mwe', ip: '192.168.30.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=41.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 164b22a3-62fd-4a76-9206-9c8283178477
+*** Element info: {Using=css selector, value=th..dataCell   > a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:482)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at CreateAndDeleteAccountTest.testCreateAccount(CreateAndDeleteAccountTest.java:43)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector th..dataCell   > a is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: An invalid or illegal selector was specified
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'mwe', ip: '192.168.30.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_60'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/mwe/AppData/Local/Temp/anonymous2373757057934462878webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10633)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/mwe/AppData/Local/Temp/anonymous2373757057934462878webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10664)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/mwe/AppData/Local/Temp/anonymous2373757057934462878webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10668)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/mwe/AppData/Local/Temp/anonymous2373757057934462878webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12534)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/mwe/AppData/Local/Temp/anonymous2373757057934462878webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12539)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/mwe/AppData/Local/Temp/anonymous2373757057934462878webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12481)
+
