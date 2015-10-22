@@ -71,7 +71,7 @@ public class CreateAndDeleteAccountTest {
       return true;
     } catch (NoAlertPresentException e) {
       return false;
-      //gh
+      
     }
   }
 
