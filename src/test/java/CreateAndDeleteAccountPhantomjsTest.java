@@ -31,6 +31,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import com.thoughtworks.selenium.webdriven.commands.MouseEvent;
 
 public class CreateAndDeleteAccountPhantomjsTest {
+	private String baseUrl;
 	private WebDriver driver;
 	private boolean acceptNextAlert = true;
 	private StringBuffer verificationErrors = new StringBuffer();
@@ -38,16 +39,18 @@ public class CreateAndDeleteAccountPhantomjsTest {
 	@Before
 	public void setUp() throws Exception {
 		driver = new PhantomJSDriver();
-		((JavascriptExecutor) driver).executeScript("window.alert = function(msg){};");
-		((JavascriptExecutor) driver).executeScript("window.confirm = function(msg){return true;};");
-		
-	
-		System.out.println(((RemoteWebDriver) driver).getCapabilities());
+//		((JavascriptExecutor) driver).executeScript("window.alert = function(msg){};");
+//		((JavascriptExecutor) driver).executeScript("window.confirm = function(msg){return true;};");
+//		
+//	
+//		System.out.println(((RemoteWebDriver) driver).getCapabilities());
        
         
 		//driver = new PhantomJSDriver();
 		//driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+
 	}
 
 	@Test
@@ -65,7 +68,7 @@ public class CreateAndDeleteAccountPhantomjsTest {
 		driver.findElement(By.linkText("Accounts")).click();
 		driver.findElement(By.name("new")).click();
 		driver.findElement(By.id("acc2")).clear();
-		driver.findElement(By.id("acc2")).sendKeys("PhantomJSRecordGeni");
+		driver.findElement(By.id("acc2")).sendKeys("PhantomJSRecord");
 		driver.findElement(By.name("save")).click();
 	//	driver.findElement(By.cssSelector("#bottomButtonRow > input[name=\"save\"]")).click();
 		
